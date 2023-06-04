@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wbpage under construction</title>
+   <style>
+      body{
+         display: grid;
+         margin: 0;
+         padding: 0;
+         place-items: center;
+         height: 100vh;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         color: #fff ;
+         background-color: #000
+      }
+
+      #main{
+         display: grid;
+         place-items: center;
+         border: 10px dashed #ff0;
+         border-radius: 20px;
+         padding: 0 1rem;
+         animation: 2s blinkingBorder linear infinite
+      }
+
+      @keyframes blinkingBorder{
+         50%{
+            border-color: #f0f000a0;
+         }
+      }
+
+      h1{
+         font-size: clamp(3rem, 10vw, 4rem);
+         margin: 0 0 2rem 0;
+         white-space: nowrap;
+         font-family: 'Courier New', Courier, monospace
+      }
+
+      h1 span{
+         animation: 10s blinkingText linear
+      }
+
+      p{
+         font-size: clamp(1.5rem, 10vw, 2rem);
+      }
+   </style>
+</head>
+<body>
+   <div id="main">
+      <h1>⚠️ <span>WEBPAGE UNDER CONSTRUCTION</span> ⚠️</h1>
+      <P>Check back later! Who knows if the webpage is ready by the then right?</P>
+   </div>
+</body>
+</html>
