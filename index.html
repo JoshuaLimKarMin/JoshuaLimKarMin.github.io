@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Joshua's personal webpage || Homepage</title>
+   <script>
+      window.onload = () => {
+         // Dialog elements
+         const personalBlogDialog = document.querySelector('#personalBlogDialog')
+
+         // Button elements
+         const personalBlogButton = document.querySelector('#personalBlogButton')
+
+         // Functions
+
+         // Personal blog functions
+         personalBlogButton.addEventListener('click', () => {
+            personalBlogDialog.showModal()
+         })
+
+         // Initialization
+         personalBlogDialog.showModal()
+
+      }
+   </script>
+</head>
+<body>
+   <h1>Joshua's projects</h1>
+   <div>
+      <p>Programming category</p>
+      <button>Web designing</button>
+      <button>Web server development</button>
+      <button>Discord bot development</button>
+   </div>
+   <div>
+      <button>Photography</button>
+   </div>
+   <div>
+      <p>Blogs</p>
+      <button id="personalBlogButton">Personal introduction</button>
+   </div>
+   
+
+   <!-- Dialog section -->
+   <dialog id="personalBlogDialog">
+      <h1>My personal introduction</h1>
+      <p>Hi there!!!</p>
+      <p>I'm Joshua and welcome to my personal website! In this website, I'm showing what I'm able to do and my past projects that I've personally made. I make websites, Discord bots and do phtotgraphy. </p>
+      <p>Back in 2020 during MCO, I started to learn programming on my own and ended up being a self thought programmer. My first programming language is JavaScript. My main motivation at that time was making Discord bots. I made a few, but never finished them. 2 of many of my bots actually ended up becoming extreamly complex.</p>
+      <p>After awhile of Discord bot programming, I got comfortable with programming in JavaScript and Node.js. I started playing around with Node.js and ended up making a web server. I then started to make my first website and played around with HTML, CSS and JavaScript in the web. I soon became afound of web programming and decided to play around more. I'm still learning to make better websites and techniques</p>
+      <p>In 2022, MCO was finally lifted and we could return back to our daily life. I joined a team in my school called the Editorial Board. I was the photographer for the school. I learnt various techniques and over there.</p>
+      <p>It's thanks to my past that then made me a programmer and a photographer by today. I couldn't be more thankful today if I had went a different path.</p>
+      <p>Feel free to checkout more of this website. You can see my past projects and work. Feel free to contact me if you want to ask me to help you out with any making a website. I'll probably start doing photography for others later.</p>
+      <br>
+      <footer>
+         <p>Written on: <time>04-06-2023</time></p>
+      </footer>
+   </dialog>
+</body>
+</html>
