@@ -4,31 +4,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Joshua's personal webpage || Homepage</title>
-   <script>
-      window.onload = () => {
-         // Dialog elements
-         const personalBlogDialog = document.querySelector('#personalBlogDialog')
-
-         // Button elements
-         const personalBlogButton = document.querySelector('#personalBlogButton')
-
-         // Functions
-
-         // Personal blog functions
-         personalBlogButton.addEventListener('click', () => {
-            personalBlogDialog.showModal()
-         })
-
-         // Initialization
-         personalBlogDialog.showModal()
-
-      }
-   </script>
+   <link rel="stylesheet" href="/css/index-page/main.css">
+   <script defer src="/js/index-page/main.js"></script>
 </head>
 <body>
    <h1>Joshua's projects</h1>
    <div>
-      <p>Programming category</p>
+      <p>Programming</p>
       <button>Web designing</button>
       <button>Web server development</button>
       <button>Discord bot development</button>
@@ -38,24 +20,53 @@
    </div>
    <div>
       <p>Blogs</p>
-      <button id="personalBlogButton">Personal introduction</button>
+      <button id="personalBlogButton" class="blog">Personal introduction</button>
+      <button id="aboutWebsiteButton" class="blog">About this website</button>
    </div>
-   
+   <div>
+      <p>Developer logs</p>
+      <button id="personalWebsiteButton" class="devLogbutton">Personal website</button>
+   </div>
 
    <!-- Dialog section -->
-   <dialog id="personalBlogDialog">
+   <dialog id="personalBlogDialog" class="blogDialog">
+      <button class="closeButton">Close (×)</button>
       <h1>My personal introduction</h1>
       <p>Hi there!!!</p>
       <p>I'm Joshua and welcome to my personal website! In this website, I'm showing what I'm able to do and my past projects that I've personally made. I make websites, Discord bots and do phtotgraphy. </p>
       <p>Back in 2020 during MCO, I started to learn programming on my own and ended up being a self thought programmer. My first programming language is JavaScript. My main motivation at that time was making Discord bots. I made a few, but never finished them. 2 of many of my bots actually ended up becoming extreamly complex.</p>
-      <p>After awhile of Discord bot programming, I got comfortable with programming in JavaScript and Node.js. I started playing around with Node.js and ended up making a web server. I then started to make my first website and played around with HTML, CSS and JavaScript in the web. I soon became afound of web programming and decided to play around more. I'm still learning to make better websites and techniques</p>
-      <p>In 2022, MCO was finally lifted and we could return back to our daily life. I joined a team in my school called the Editorial Board. I was the photographer for the school. I learnt various techniques and over there.</p>
+      <p>After awhile of Discord bot programming, I got comfortable with programming in JavaScript and Node.js. I started playing around with Node.js and ended up making a web server. I then started to make my first website and played around with HTML, CSS and JavaScript in the web. I soon became afound of web programming and decided to play around more. I'm still learning to make better websites and learning techniques that can aid with development.</p>
+      <p>In 2022, MCO was finally lifted and we could return back to our daily life. I joined a team in my school called the Editorial Board. I was the photographer for the school. I learnt various techniques and ways to take great photos over there.</p>
       <p>It's thanks to my past that then made me a programmer and a photographer by today. I couldn't be more thankful today if I had went a different path.</p>
       <p>Feel free to checkout more of this website. You can see my past projects and work. Feel free to contact me if you want to ask me to help you out with any making a website. I'll probably start doing photography for others later.</p>
       <br>
       <footer>
          <p>Written on: <time>04-06-2023</time></p>
       </footer>
+   </dialog>
+   <dialog id="aboutWebsiteDialog" class="blogDialog">
+      <button class="closeButton">Close (×)</button>
+      <h1>About this website</h1>
+      <p>This website is for me to document my personal journey, findings. It's also for others to see all my photos that I've taken. Plus, this website also surves as a way to introduce myself.</p>
+      <p>This website is designed with single page in mind.</p>
+      <p>What this means is that the website is designed to be on one page. All content will be on one page and transitions.</p>
+      <p>this design has a big flaw. the webpage has a chance of causing a large amount of memory useage as Everything is not being cleared out of memory but instead new content is being placed on top of the existing content. This design also increases the complexity of making the website. This might lead to more unexpected behaviour after deployment.</p>
+      <p>This is just an experiment that might fail. In the event of unexpected issues, please switch to <a href="https://joshualimkarmin.github.io/joshualimkarmin.github.io/no-single-page">https://joshualimkarmin.github.io/joshualimkarmin.github.io/no-single-page</a> and please report it to me at my <a href="mailto:joshua.lim.kar.min@gmail.com?subject=Website issue report">email</a> with the subject header being website issue report. Then desccribe the issue. Thanks!</p>
+      <p>Please note that this website might go through a lot of changed in the future.</p>
+      <br>
+      <footer>
+         <p>Written on: <time>05-06-2023</time></p>
+      </footer>
+   </dialog>
+
+   <!-- This part is in need of more smart JavaScript -->
+   <dialog id="personalWebsiteSelectionDialog" class="devLogDialogSelection">
+      <button class="closeButton">Close (×)</button>
+      <p>Development log list</p>
+      <button class="devLogs1">Development log N/A</button>
+   </dialog>
+   <dialog class="devLogDialog">
+      <h1>Dev log </h1>
    </dialog>
 </body>
 </html>
